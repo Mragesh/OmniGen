@@ -15,4 +15,9 @@ pip install torch==2.3.1+cu118 torchvision --extra-index-url https://download.py
 
 pip install -e .
 
+sudo fallocate -l 20G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo cp /etc/fstab /etc/fstab.bak
 
